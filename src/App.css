@@ -5,6 +5,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -42,7 +43,7 @@ nav .logo {
 }
 
 nav .logo:hover {
-  background-color: cyan;
+  cursor:context-menu;
 }
 
 nav ul {
@@ -60,12 +61,12 @@ nav ul li a {
 
 nav ul li a:hover {
   color: cyan;
+  text-shadow: 0px 0px 17px cyan;
 }
 
 .hero {
   height: 100vh;
   background-color: #252525;
-  overflow-x: hidden;
 }
 
 .hero .page1 {
@@ -89,16 +90,18 @@ nav ul li a:hover {
 
 .hero div .btnpg1 Button {
   border: 3px solid white;
-  color: #fffffe;
+  color: white;
   margin-right: 20px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
 }
 
 .hero div .btnpg1 Button a {
-  color: #001e1d;
   text-decoration: none;
 }
 
-.hero div .btnpg1 Button:hover,  .hero div .btnpg1 Button a:hover{
+.hero div .btnpg1 Button:hover,  .hero div .btnpg1 Button a:hover {
   background-color: cyan;
   color: black;
   border: 3px solid black;
@@ -147,7 +150,7 @@ nav ul li a:hover {
 }
 
 .page3 .content {
-  background-color: #004643;
+  background-color: #97979782;
   border-radius: 20px;
 }
 
@@ -155,6 +158,22 @@ nav ul li a:hover {
   background-size: cover;
   height: 120px;
   margin: 15px;
+}
+
+.scroll-bar {
+  color: white;
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  opacity: 0.5;
+}
+
+.scroll-bar:hover {
+  border-radius: 100%;
+  color: cyan;
+  box-shadow: 0px 0px 5px 0px cyan;
+-webkit-box-shadow: 0px 0px 5px 0px cyan;
+-moz-box-shadow: 0px 0px 5px 0px cyan;
 }
 
 /* Responsive Breakpoint */
@@ -187,6 +206,10 @@ nav ul li a:hover {
     transform: translateY(-120%);
   }
 
+  .hero {
+    overflow-x: hidden;
+  }
+
   /* Page 1 Start */
   .page1 h1 {
     font-size: 5rem;
@@ -214,7 +237,6 @@ nav ul li a:hover {
   .line2 {
     width: 40%;
     height: 10px;
-    background-color: #fffffe;
   }
 
   .page2 .paragraf p {
@@ -253,6 +275,10 @@ nav ul li a:hover {
     transform: translateY(-120%);
   }
 
+  .hero {
+    overflow-x: hidden;
+  }
+
   /* Page 1 Start */
   .page1 h1 {
     font-size: 5rem;
@@ -279,8 +305,7 @@ nav ul li a:hover {
 
   .line2 {
     width: 40%;
-    height: 10px;
-    background-color: #fffffe;
+    height: 5px;
   }
 
   .page2 .paragraf p {
@@ -341,15 +366,22 @@ nav ul li a:hover {
     transform: translateY(-120%);
   }
 
+  .hero {
+    overflow-x: hidden;
+  }
+
   /* Page 1 Start */
   .page1 h1 {
-    margin-left: 40px;
+    padding-left: 10%;
     width: 100%;
     font-size: 3rem;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .hero div .line {
     width: 90%;
+    margin-top: 10px;
   }
 
   .hero div .btnpg1 {
@@ -357,10 +389,18 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .hero div .btnpg1 a {
     padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero div .btnpg1 a Button {
+    width: 150px;
   }
   /* Page 1 End */
 
@@ -376,8 +416,7 @@ nav ul li a:hover {
 
   .line2 {
     width: 40%;
-    height: 10px;
-    background-color: #fffffe;
+    height: 5px;
   }
 
   .page2 .paragraf p {
@@ -403,4 +442,9 @@ nav ul li a:hover {
     margin-top: 0;
   }
   /* Page 3 End */
+
+  /* Scroll Bar */
+  .scroll-bar {
+    right: 20px;
+  }
 }

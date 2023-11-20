@@ -2,6 +2,7 @@ import Button from '@mui/material/Button';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
 export default function Hero() {
     return (
@@ -104,6 +105,12 @@ export default function Hero() {
                 </div>
             </div>
             {/* Page 3 End */}
+
+            <a href="#home">
+                <div className='scroll-bar'>
+                    <ArrowCircleUpIcon sx={{ fontSize: 45 }} />
+                </div>
+            </a>
         </div>
     )
 }

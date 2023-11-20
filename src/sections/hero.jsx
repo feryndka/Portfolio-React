@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="hero">
             {/* Page 1 Start */}
             <div className="page1" id='home'>
-                <h1 className='text-[100px] font-semibold'>Fery Andika, <br />Fullstack Web <br />Developer</h1>
+                <h1 className='text-[100px] font-semibold'>Fery <span style={{color:'cyan'}}>Andika</span>, <br />Fullstack Web <br />Developer</h1>
                 <div className="line"></div>
                 <div className='btnpg1 my-5'>
                     <a href="mailto:feryandika151@gmail.com">
@@ -29,9 +29,7 @@ export default function Hero() {
                 </div>
             </div>
             {/* Page 1 End */}
-
             <hr id='about' />
-
             {/* Page 2 Start */}
             <div className='page2 grid grid-cols-2 gap-10'>
                 <div className='font-bold mx-8 my-24'>

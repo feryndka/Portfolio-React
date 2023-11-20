@@ -14,7 +14,7 @@ export default function Navbar() {
             <div className="logo">FA</div>
             
             <ul className={!isDensityIconVisible ? '' : 'visible'}>
-                <li><a href="#home">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#tools">Tools</a></li>
             </ul>

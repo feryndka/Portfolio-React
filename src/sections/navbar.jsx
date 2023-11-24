@@ -3,17 +3,17 @@ import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 import CloseIcon from '@mui/icons-material/Close';
 
 export default function Navbar() {
-    const [isDensityIconVisible, setDensityIconVisible] = useState(true);
+    const [isVisible, setIsVisible] = useState(true);
 
     const handleIconClick = () => {
-        setDensityIconVisible(!isDensityIconVisible);
+        setIsVisible(!isVisible);
     };
 
     return (
         <nav>
             <div className="logo">FA</div>
             
-            <ul className={!isDensityIconVisible ? '' : 'visible'}>
+            <ul className={!isVisible ? '' : 'visible'}>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#tools">Tools</a></li>
@@ -21,7 +21,7 @@ export default function Navbar() {
             </ul>
 
             <div className='iconDensity' onClick={handleIconClick}>
-                {isDensityIconVisible ? (<DensityMediumIcon />) : (<CloseIcon />)}
+                {isVisible ? (<DensityMediumIcon />) : (<CloseIcon />)}
             </div>
         </nav>
     )

@@ -4,6 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import TelegramIcon from '@mui/icons-material/Telegram';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import img from '../assets/icon.png'
 
 export default function Hero() {
@@ -37,24 +38,24 @@ export default function Hero() {
             <div className='page2 grid grid-cols-2 gap-10'>
                 <div className='page2-content font-bold mx-8 my-24'>
                     <div className="line2"></div>
-                    I love to researching and analyzing about technology.
+                    A Passionate Web Developer.
                 </div>
                 <div className='paragraf'>
-                    <p className='paragraf-content p-5 font-serif'>
+                    <p className='paragraf-content p-5 font-serif text-gray-400'>
                         A passionate IT student currently pursuing my degree. Technology has always fascinated me, and I find joy in exploring the vast world of Information Technology.
                     </p>
-                    <p className='paragraf-content p-5 font-serif'>
+                    <p className='paragraf-content p-5 font-serif text-gray-400'>
                         I am currently enrolled in <span>Telkom University</span> where I am gaining a comprehensive understanding of various IT concepts,
                         programming languages, and the latest advancements in the field. From developing software applications to understanding 
                         network architectures, my academic journey is equipping me with the knowledge and skills needed to thrive in the dynamic 
                         IT industry.
                     </p>
-                    <p className='paragraf-content p-5 font-serif'>
+                    <p className='paragraf-content p-5 font-serif text-gray-400'>
                         I am particularly interested in <span>web development</span>, and I am eager to contribute my skills to real-world projects. 
                         I believe in the power of technology to bring about positive change, and I am excited about the opportunities 
                         that lie ahead in the IT field.
                     </p>
-                    <p className='paragraf-content p-5 font-serif'>
+                    <p className='paragraf-content p-5 font-serif text-gray-400'>
                         Feel free to connect with me if you share similar interests or if you'd like 
                         to discuss anything related to technology and IT. I'm always open to new ideas and collaborations!
                     </p>
@@ -146,6 +147,31 @@ export default function Hero() {
                     <ArrowCircleUpIcon sx={{ fontSize: 45 }} />
                 </div>
             </a>
+
+            {/* Footer */}
+            <footer className="text-gray-600 body-font">
+                <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                    <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                        <div className="logo">FA</div>
+                    </a>
+                    <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 — Fery Andika</p>
+                    <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                        <a className="ml-3 text-gray-500" href='https://github.com/feryndka'>
+                            <GitHubIcon />
+                        </a>
+                        <a className="ml-3 text-gray-500" href='https://www.instagram.com/feryndka'>
+                            <InstagramIcon />
+                        </a>
+                        <a className="ml-3 text-gray-500" href='https://www.linkedin.com/in/feryandika'>
+                            <LinkedInIcon />
+                        </a>
+                        <a className="ml-3 text-gray-500" href='mailto:feryandika151@gmail.com'>
+                            <EmailIcon />
+                        </a>
+                    </span>
+                </div>
+            </footer>
+            {/* Footer End */}
         </div>
     )
 }

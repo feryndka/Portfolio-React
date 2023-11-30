@@ -5,33 +5,54 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import img from '../assets/icon.png'
+import Particles from './particle'
 
 export default function Hero() {
     return (
         <div className="hero" id='hero-section'>
             {/* Page 1 Start */}
             <div className="page1" id='home'>
-                <h1 className='text-[100px] font-semibold'>Fery <span style={{color:'cyan'}}>Andika</span>, <br />Fullstack Web <br />Developer</h1>
+                <Particles />
+                <h1 className='text-[100px] font-semibold'>Fery Andika, <br />Fullstack Web <br />Developer</h1>
                 <div className="line"></div>
                 <div className='btnpg1 my-5'>
-                    <a href="mailto:feryandika151@gmail.com">
-                        <Button variant="outlined" startIcon={<EmailIcon />}>
-                            Email
+                    <a href="#about">
+                        <Button variant="outlined" className="more">
+                            Read More <ExpandMoreIcon sx={{ fontSize: 30 }}/>
                         </Button>
                     </a>
-                    <a href="https://www.linkedin.com/in/feryandika/">
-                        <Button variant="outlined" startIcon={<LinkedInIcon />}>
-                            LinkedIn
-                        </Button>
-                    </a>
-                    <a href="https://github.com/feryndka">
-                        <Button variant="outlined" startIcon={<GitHubIcon />}>
-                            GitHub
+                    <a href="#contact">
+                        <Button variant="outlined" className="contactMe">
+                            Contact Me <TelegramIcon sx={{ fontSize: 30 }}/>
                         </Button>
                     </a>
                 </div>
             </div>
+
+            {/* <div className="page1 flex justify-center p-5 md:p-16 lg:p-28" id='home'>
+                <Particles />
+                <div className="flex flex-col text-center justify-center items-center max-w-7xl  text-white">
+                    <div className="flex flex-col text-white mt-5">
+                        <h1 className="text-[100px] font-semibold">Hello I'm Fery <span style={{color:'cyan'}}>Andika</span></h1>
+                        <p className="text-[50px] mt-2 md:mt-4 tracking-wide">Fullstack Developer</p>
+                    </div>
+                    <div className="flex mt-10 space-x-5">
+                        <a href="#about">
+                            <button className="bg-white text-blue-600 px-6 py-2 hover:brightness-105 font-semibold">
+                                Read More
+                            </button>
+                        </a>
+                        <a href="#contact">
+                            <button className="bg-blue-900 text-white border-2 border-white px-6 py-2 hover:brightness-105 font-semibold">
+                                Contact Me <TelegramIcon /> 
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div> */}
+
             {/* Page 1 End */}
             <br id='about' />
             {/* Page 2 Start */}
@@ -151,7 +172,7 @@ export default function Hero() {
             {/* Footer */}
             <footer className="text-gray-600 body-font">
                 <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-                    <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 mr-5">
                         <div className="logo">FA</div>
                     </a>
                     <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 — Fery Andika</p>
